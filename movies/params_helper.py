@@ -16,4 +16,5 @@ class RequestParamsHelper:
 
     @staticmethod
     def get_order_direction(request):
+        # Verifica si se proporciona un orden ascendente o descendente (por defecto, ascendente)
         return 'ASC' if request.GET.get('order', 'asc').lower() == 'asc' else 'DESC'
