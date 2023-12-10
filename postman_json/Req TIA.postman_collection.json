@@ -1,0 +1,470 @@
+{
+	"info": {
+		"_postman_id": "9bbcae54-9fa3-4625-94ea-e0a8cb037309",
+		"name": "Req TIA",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "4138448"
+	},
+	"item": [
+		{
+			"name": "Listar los registros",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "",
+						"value": "",
+						"type": "text",
+						"disabled": true
+					}
+				],
+				"url": {
+					"raw": "{{url}}/movies?size=10&page=1&sort=product_id&order=asc&start_date=18/04/2002&end_date=18/04/2002&product_id=0790747324&search_user=r",
+					"host": [
+						"{{url}}"
+					],
+					"path": [
+						"movies"
+					],
+					"query": [
+						{
+							"key": "size",
+							"value": "10"
+						},
+						{
+							"key": "page",
+							"value": "1"
+						},
+						{
+							"key": "sort",
+							"value": "product_id"
+						},
+						{
+							"key": "order",
+							"value": "asc"
+						},
+						{
+							"key": "start_date",
+							"value": "18/04/2002"
+						},
+						{
+							"key": "end_date",
+							"value": "18/04/2002"
+						},
+						{
+							"key": "product_id",
+							"value": "0790747324"
+						},
+						{
+							"key": "search_user",
+							"value": "r"
+						}
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "Listar los registros",
+					"originalRequest": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "",
+								"value": "",
+								"type": "text",
+								"disabled": true
+							}
+						],
+						"url": {
+							"raw": "{{url}}/movies?size=10&page=1&sort=product_id&order=asc&start_date=18/04/2002&end_date=18/04/2002",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"movies"
+							],
+							"query": [
+								{
+									"key": "size",
+									"value": "10"
+								},
+								{
+									"key": "page",
+									"value": "1"
+								},
+								{
+									"key": "sort",
+									"value": "product_id"
+								},
+								{
+									"key": "order",
+									"value": "asc"
+								},
+								{
+									"key": "start_date",
+									"value": "18/04/2002"
+								},
+								{
+									"key": "end_date",
+									"value": "18/04/2002"
+								},
+								{
+									"key": "product_id",
+									"value": "0790747324",
+									"disabled": true
+								},
+								{
+									"key": "search_user",
+									"value": "r",
+									"disabled": true
+								}
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Date",
+							"value": "Sun, 10 Dec 2023 19:18:26 GMT"
+						},
+						{
+							"key": "Server",
+							"value": "WSGIServer/0.2 CPython/3.11.4"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "X-Frame-Options",
+							"value": "DENY"
+						},
+						{
+							"key": "Content-Length",
+							"value": "5210"
+						},
+						{
+							"key": "X-Content-Type-Options",
+							"value": "nosniff"
+						},
+						{
+							"key": "Referrer-Policy",
+							"value": "same-origin"
+						},
+						{
+							"key": "Cross-Origin-Opener-Policy",
+							"value": "same-origin"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"current_page\": 1,\n    \"data\": [\n        {\n            \"product_id\": \"0790747324\",\n            \"categories\": [\n                \"['Movies & TV', 'Science Fiction & Fantasy', 'Science Fiction', 'Classics']\"\n            ],\n            \"user_id\": \"A1T0Z4J5PPLTC7\",\n            \"profile_name\": \"Bruce\",\n            \"helpfulness\": \"10/12\",\n            \"score\": 4,\n            \"review_time\": \"18/04/2002\",\n            \"summary\": \"An incredible restoration\",\n            \"review_text\": \"Skip the godawful remake that's in theaters right now, and get the original instead.  This is one of the greatest science fiction movies of all time, and the DVD restoration is great.  <p>The movie itself has much to recommend it.  It follows the book very closely, Rod Taylor was an excellent choice for the lead, and the special effects (which won an Oscar in 1960) have aged surprisingly well.  <p>It takes place in 1899, and a great deal of effort was taken to ensure historic authenticity.  The time machine itself is a beautiful Victorian contraption that wouldn't look out of place in, say, 12 Monkeys.  The Eloi of the 800k century look exactly as I would have pictured them, and the Morlocks are suitably creepy.<p>Much has been said for the special effects, which use some very effective stop-action photography.  They are judiciously used here, and with only a couple of tiny exceptions, do a great job of suspending disbelief.<p>The DVD transfer is stunning, rivaling that of North by Northwest.  The colors (originally done using Metrocolor) are deeply saturated and vivid, only looking slightly washed out in a couple of places.  Artifacts from the original print are present here and there (noticeably in the rotting fruit sequence), but for the most part have been well cleaned up.  This certainly doesn't look like a 40-year-old movie.<p>The DVD includes a documentary which is really interesting in parts, but really drags in others (the special effects explanations are *exhaustive*), which isn't a problem since it has its own chapter stops.  What's really informative is to watch the original movie footage in the documentary and compare it to the restored footage in the movie itself.  Night and day.  Oh yeah, and Michael J. Fox and Carl Sagan make appearances!<p>All in all, a classic movie that's aged well, and a brilliant transfer to match.\"\n        },\n        {\n            \"product_id\": \"6303257933\",\n            \"categories\": [\n                \"['Movies & TV', 'Science Fiction & Fantasy', 'Science Fiction', 'Animation']\"\n            ],\n            \"user_id\": \"A1T0Z4J5PPLTC7\",\n            \"profile_name\": \"dranixx\",\n            \"helpfulness\": \"2/2\",\n            \"score\": 4,\n            \"review_time\": \"18/04/2002\",\n            \"summary\": \"An outsider perspective\",\n            \"review_text\": \"I'm only a casual fan of anime.  Almost every anime movie I've seen shares the same annoying cliches:  minimal character development, long sequences of self-righteous expository dialogue, the old freeze-frame-over-a-moving-background image during the fight scenes, etcetera.  This movie has those same flaws, but it also has a great deal to recommend it.<p>The story itself involves D, a stoic half-vampire who hunts other vampires (stop me if you've heard this before) in a post-apocalypse future.  Except that this guy has a talking parasite in his hand that acts as his partner/foil, and in the future depicted here, vampires are a dying breed.  During the opening scene, a human woman is abducted by the great vampire Meier, and her family hires D to find her.<p>This is where the movie gets unique.  D's pretty much a cold fish, but the supposed bad-guy Meier is actually in love with the human woman, and his love is reciprocated.  The only villanous quality I can see in the guy is that he's a vampire.  He leads D and a group of rival hunters on a long and picaresque chase through a bleak future, which is half gothic ruin and half dead urban sprawl.  D's travels are just as often depicted around decaying radio telescopes and highway overpasses as they are in cathedrals and forests.  More of D's past (which isn't a whole lot) is revealed along the way, and his interactions with Leila, one of the rival hunters, help flesh out her character well.<p>Leila may be the closest thing this movie has to a moral center.  After all, Meier's love for his human consort is believable, and it's hard to peg him as a villian, while D comes across as blindly obsessive.  This really isn't a good-and-evil thing, and the moral ambiguity adds a great deal to the story.  Leila has the usual reasons for being a vampire hunter, but it's her moral struggle toward the end that gives her character real depth.  Luckily, she and D don't fall into a romance (which would have been predictable but all wrong), but they do develop a sort of friendship, which makes the ending sequence more poignant.  Yes, this is an anime movie with a coherent ending.<p>There are fight scenes-lots of 'em, and they're pretty bloody, but they're well-choreographed, and the animation is great.  The backgrounds are unique, and for the most part, the character drawings are masterfully done.  The DVD does a great job of keeping everything clear and well-contrasted-not an easy thing in a movie with this much brown in its pallette.<p>All in all, it's not the most original movie I've seen, nor is it the most original anime, but this is a good, solid film that rewards repeated viewings.\"\n        }\n    ],\n    \"total_registros\": 2,\n    \"total_paginas\": 1\n}"
+				}
+			]
+		},
+		{
+			"name": "datos adicinales filtros",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{url}}/movies/additional?size=10&sort=score&order=desc",
+					"host": [
+						"{{url}}"
+					],
+					"path": [
+						"movies",
+						"additional"
+					],
+					"query": [
+						{
+							"key": "size",
+							"value": "10"
+						},
+						{
+							"key": "page",
+							"value": "1",
+							"disabled": true
+						},
+						{
+							"key": "sort",
+							"value": "score"
+						},
+						{
+							"key": "order",
+							"value": "desc"
+						},
+						{
+							"key": "start_date",
+							"value": "18/04/2002",
+							"disabled": true
+						},
+						{
+							"key": "end_date",
+							"value": "18/04/2002",
+							"disabled": true
+						}
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "datos adicinales filtros",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{url}}/movies/additional?size=10&sort=score&order=desc",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"movies",
+								"additional"
+							],
+							"query": [
+								{
+									"key": "size",
+									"value": "10"
+								},
+								{
+									"key": "page",
+									"value": "1",
+									"disabled": true
+								},
+								{
+									"key": "sort",
+									"value": "score"
+								},
+								{
+									"key": "order",
+									"value": "desc"
+								},
+								{
+									"key": "start_date",
+									"value": "18/04/2002",
+									"disabled": true
+								},
+								{
+									"key": "end_date",
+									"value": "18/04/2002",
+									"disabled": true
+								}
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Date",
+							"value": "Sun, 10 Dec 2023 20:10:08 GMT"
+						},
+						{
+							"key": "Server",
+							"value": "WSGIServer/0.2 CPython/3.11.4"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "X-Frame-Options",
+							"value": "DENY"
+						},
+						{
+							"key": "Content-Length",
+							"value": "20344"
+						},
+						{
+							"key": "X-Content-Type-Options",
+							"value": "nosniff"
+						},
+						{
+							"key": "Referrer-Policy",
+							"value": "same-origin"
+						},
+						{
+							"key": "Cross-Origin-Opener-Policy",
+							"value": "same-origin"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"data_best_scores\": [\n        {\n            \"product_id\": \"B00006HAXW\",\n            \"categories\": [\n                \"['CDs & Vinyl', 'Pop', 'Oldies', 'Doo Wop']\"\n            ],\n            \"user_id\": \"A3NPHQVIY59Y0Y\",\n            \"profile_name\": \"S. Dorman\",\n            \"helpfulness\": \"7/7\",\n            \"score\": 5,\n            \"review_time\": \"18/03/2003\",\n            \"summary\": \"DOO WOP RECORDED HISTORY- A MUST HAVE ITEM\",\n            \"review_text\": \"Get it, also get Dop Wop 50 and Doo Wop 51. Each performances is like the original 45's, except with modern, nice ,crisp sound like today's cds.\"\n        },\n        {\n            \"product_id\": \"B00006HAXW\",\n            \"categories\": [\n                \"['CDs & Vinyl', 'Pop', 'Oldies', 'Doo Wop']\"\n            ],\n            \"user_id\": \"AFKMBAY28XO8A\",\n            \"profile_name\": \"RFP\",\n            \"helpfulness\": \"7/7\",\n            \"score\": 5,\n            \"review_time\": \"02/12/2002\",\n            \"summary\": \"ROCK RYTHM AND DOOWOP\",\n            \"review_text\": \"Excellent, excellent performers.  Excellent video and audio quality.  Buy this DVD and go back in time.  Well worth the time waiting for almost a year to get hold of the DVD.\"\n        },\n        {\n            \"product_id\": \"B00006HAXW\",\n            \"categories\": [\n                \"['CDs & Vinyl', 'Pop', 'Oldies', 'Doo Wop']\"\n            ],\n            \"user_id\": \"A1RSDE90N6RSZF\",\n            \"profile_name\": \"Joseph M. Kotow\",\n            \"helpfulness\": \"9/9\",\n            \"score\": 5,\n            \"review_time\": \"14/01/2003\",\n            \"summary\": \"Pittsburgh - Home of the OLDIES\",\n            \"review_text\": \"I have all of the doo wop DVD's and this one is as good or better than the 1st ones. Remember once these performers are gone, we'll never get to see them again. Rhino did an excellent job and if you like or love doo wop and Rock n Roll you'll LOVE this DVD !!\"\n        },\n        {\n            \"product_id\": \"B00006HAXW\",\n            \"categories\": [\n                \"['CDs & Vinyl', 'Pop', 'Oldies', 'Doo Wop']\"\n            ],\n            \"user_id\": \"A1FRPGQYQTAOR1\",\n            \"profile_name\": \"Les\",\n            \"helpfulness\": \"9/9\",\n            \"score\": 5,\n            \"review_time\": \"08/09/2003\",\n            \"summary\": \"Marvelous, just Marvelous!\",\n            \"review_text\": \"The people who have reviewed this DVD before me have said it all! It is just great! Came across the concert on PBS one night and decided to buy it then and there. After viewing it once I also bought DOO WOP 50 and DOO WOP 51. What a wonderful nostalgic trip to the past! You will never regret buying this DVD.\"\n        },\n        {\n            \"product_id\": \"B00006HAXW\",\n            \"categories\": [\n                \"['CDs & Vinyl', 'Pop', 'Oldies', 'Doo Wop']\"\n            ],\n            \"user_id\": \"AD4CDZK7D31XP\",\n            \"profile_name\": \"Anthony Accordino\",\n            \"helpfulness\": \"64/65\",\n            \"score\": 5,\n            \"review_time\": \"10/08/2003\",\n            \"summary\": \"A  Rock N Roll History Lesson\",\n            \"review_text\": \"Over the past few years, public television has put on a series of vintage &quot;Doo Wop&quot;  and Rock 'N' Roll concert reunions that have been absolutely flawless.  This latest dvd &quot;Rock, Rhythm And &quot;Doo Wop&quot;, is a total delight to ones ears.  Keep in mind all these vintage artists recorded in an era, when vocal talent was essential, to get a recording contract?  They did not have modern day computerized overdub technology, which enables many modern day artist's with limited ability to survive?  This dvd reads like a who's who of early rock.  The architect of rock, Little Richard starts off this concert with a stomping version of &quot;Keep-A Rockin&quot;, and the line-up that follows, keeps this concert at a premium level of performances.  You get to see and hear Lou Christie, Little Anthony and the Imperials, Jerry Butler, Lloyd Price, Joey Dee and the Starliters, Frankie Valli, Fred Paris and the Satins and the Countours, just to name a few.  However, nothing prepared me for the performance of Jay Black and the Americans?  After singing &quot;This Magic Moment&quot;, Jay gave a performance, that could make anybody from the babyboomer era feel young again.  As he prepared to sing &quot;Cara Mia&quot;, he joked that he first recorded the song at age 25, and must now at age 62, hit those same notes?  Hit those notes he did!  Using that opera trained voice, he delivered a powerful performance that had the entire audience on it's feet, showering him with a well deserved standing ovation.  If you are a fan of the old-time vocal and rock sound of the 50's and 60's, this is an absolute must have dvd.  I highly recommend this to everyone, who enjoys those golden oldies.\"\n        },\n        {\n            \"product_id\": \"B00006HAXW\",\n            \"categories\": [\n                \"['CDs & Vinyl', 'Pop', 'Oldies', 'Doo Wop']\"\n            ],\n            \"user_id\": \"A2P7UB02HAVEPB\",\n            \"profile_name\": \"Joseph P. Aiello\",\n            \"helpfulness\": \"24/24\",\n            \"score\": 5,\n            \"review_time\": \"18/08/2003\",\n            \"summary\": \"If You Like DooWop You Gotta Have This DVD\",\n            \"review_text\": \"Wow! When I saw this show on PBS--that was it, I had to have this!  What great tunes!  And seeing these groups--terrific! I couldn't find a list of songs, so here's some of them: Keep-a-Knockin--Little Richard; Sea Cruise--Frankie Ford; A Thousand Stars--Kathi Young (still cute!) and the Innocents; Silhouettes by the Rays; Do You Love Me--The Contours; Have You Heard--The Duprees; over 40 songs in all, including Little Anthony, The Five Satins, Lloyd Price, The Skyliners, The Fleetwoods, Jay &amp; the Americans (This Magic Moment, Cara Mia and Come a Little Bit Closer!); Lou Christie; plus Franki Valli and Jerry Butler as hosts. Plus interviews with Kathi Young, Lou Christie and the producer TJ Lubinski (thanks TJ!)\"\n        },\n        {\n            \"product_id\": \"B003AI2VGA\",\n            \"categories\": [],\n            \"user_id\": \"A1I7QGUDP043DG\",\n            \"profile_name\": \"Grady Harp\",\n            \"helpfulness\": \"8/10\",\n            \"score\": 5,\n            \"review_time\": \"30/11/2006\",\n            \"summary\": \"This movie needed to be made.\",\n            \"review_text\": \"The scenes in this film can be very disquieting due to their graphic re-enactment of real events, but this story needs to be told. I will say the violence was injected into the movie with as much taste as manageable when dealing with rape scenes, etc. Inspired by true events, women are being murdered in Juarez after they leave the factory where they work. A fearful community is suddenly given some hope when one of the young victims not only lives, but experiences 'stigmata' after seeing the Virgin Mary.  I was shocked to learn that murders in Juarez are still happening and many are unsolved. I believe this director brought a very important story to the surface. Though it's never pleasant to think about young women being murdered, this movie depicts a harsh reality of the high cost of exploited-cheap labor.<br /><br />Chrissy K. McVay - Author\"\n        },\n        {\n            \"product_id\": \"B00004CQT3\",\n            \"categories\": [\n                \"['Movies & TV', 'Genre for Featured Categories', 'Kids & Family']\"\n            ],\n            \"user_id\": \"AH7ZNGM8WOOGN\",\n            \"profile_name\": \"Michael\",\n            \"helpfulness\": \"1/1\",\n            \"score\": 5,\n            \"review_time\": \"22/05/2007\",\n            \"summary\": \"Great American Movie\",\n            \"review_text\": \"This is by far one of the best American Movies, that I have seen in a very long time. It was indeed a true American reality show.\"\n        },\n        {\n            \"product_id\": \"B00006HAXW\",\n            \"categories\": [\n                \"['CDs & Vinyl', 'Pop', 'Oldies', 'Doo Wop']\"\n            ],\n            \"user_id\": \"AFC8IKR407HSK\",\n            \"profile_name\": \"Richard Albero\",\n            \"helpfulness\": \"14/14\",\n            \"score\": 5,\n            \"review_time\": \"18/02/2003\",\n            \"summary\": \"Professional Excellence\",\n            \"review_text\": \"Having worked in television for 34 years I can tell you that this is one of the finest doo-wop DVD's you will ever see. It is done with class and a great respect for the talent. Congratulations to T.J. Lubinsky the producer. Having been brought up in the Bronx and lived through the era of street corner singing I advise you to pick this up today. the performance by Little Anthony and the Imperials on &quot;Two Kinds of People In The World&quot; is worth the price alone. I have played this piece over and over. All the performances are great - buy it - you will be a fan of TJ Lubinsky and his special admiration for what I was lucky and privileged enough to live through.\"\n        },\n        {\n            \"product_id\": \"B00006HAXW\",\n            \"categories\": [\n                \"['CDs & Vinyl', 'Pop', 'Oldies', 'Doo Wop']\"\n            ],\n            \"user_id\": \"A66KMXH9V7OGU\",\n            \"profile_name\": \"C. Thomas\",\n            \"helpfulness\": \"4/4\",\n            \"score\": 5,\n            \"review_time\": \"29/04/2007\",\n            \"summary\": \"Unbelievable Best Concert!\",\n            \"review_text\": \"This video is awesome and of particular interest to anyone who grew up with the great music of the 50's and 60's.  The Duprees were wonderful!  Also, Jay Black's Cara Mia gave me goose bumps.  It doesn't matter how old these guys are, they can still belt out quite a song.  Little Anthony and the Imperials were also very, very good!  They have recaputured the sounds of the music they way we remembered it!  The backup musicians deserve an huge amount of praise. This is one you do not want to miss!  I recommend it HIGHLY!\"\n        }\n    ],\n    \"data_worst_scores\": [\n        {\n            \"product_id\": \"B000063W1R\",\n            \"categories\": [\n                \"['Movies & TV', 'Genre for Featured Categories', 'Action & Adventure']\"\n            ],\n            \"user_id\": \"A2RWH9TYO412RC\",\n            \"profile_name\": \"Samuel F. Lytal\",\n            \"helpfulness\": \"9/16\",\n            \"score\": 1,\n            \"review_time\": \"21/12/2007\",\n            \"summary\": \"Another example of why books should not be made into movies\",\n            \"review_text\": \"If you have read Dumas' The Count of Monte Cristo then you know that it is a tale that begins but developing the character of Edmond Dantes.  He is a simple man whose main ambition is to marry the beautiful Mercedes.  He proposes to her and on the night of their engagement he is arrested for treason, betrayed by his best friend.  This is a summation of the first chapter.<br /><br />The second and maybe third chapter relates his time in prison, learning and growing from his relationship with a fellow prisoner.  He also learns from this prisoner the location of a treasure suitable for a dozen kings.  The remaining 90% of the book relates the immensley complicated details of his revenge on those that tore from him the life he held so precious.  It is a tale of intrigue and revenge that takes its time to build and develop.  When you see the traps swinging closed on Dante's enemies you feel a sense of accomplishment with him.<br /><br />Now, on to the movie.  The first full half of the movie relates Dante's betrayal and captivity.  This leaves only an hour to illustrate his revenge.  What is accomplished is a sad imitation of Alexandre Dumas' master work.  This is one of my favorite books, and one of my least favorite movies.  Hollywood's need for adventure movies to be fast paced to match today's lifestyle has ruined this story for many people.  They just don't know it.\"\n        },\n        {\n            \"product_id\": \"B000063W1R\",\n            \"categories\": [\n                \"['Movies & TV', 'Genre for Featured Categories', 'Action & Adventure']\"\n            ],\n            \"user_id\": \"A6XTOZKDV7X94\",\n            \"profile_name\": \"paark\",\n            \"helpfulness\": \"1/3\",\n            \"score\": 1,\n            \"review_time\": \"07/07/2011\",\n            \"summary\": \"Dysfunctional DVD\",\n            \"review_text\": \"I ordered a Used-Like New dvd, and the dvd was packaged nicely with a seemingly new and glossed cover. However, after popping it into the dvd player, the movie played till about half of the time and started freezing and showing no picture but sound. I initially thought something was wrong with my dvd player, so I took the dvd to my friends computers, three of them, and the same error showed at the same place in the movie. I was so frustrated because I loved this movie so much that I was so happy to now have an actual dvd copy of it; however, that was a fail.<br />Because it was Used dvd nonetheless, I felt scammed. The sellers must have had checked whether the dvd worked properly or not, but they still sold it--to me. Please check your USED CD/DVDs before reselling it back! In the end, I asked for a refund, and I hope I get it.\"\n        },\n        {\n            \"product_id\": \"B000063W1R\",\n            \"categories\": [\n                \"['Movies & TV', 'Genre for Featured Categories', 'Action & Adventure']\"\n            ],\n            \"user_id\": \"A1PO10SDIYHOMJ\",\n            \"profile_name\": \"C. Carpenter\",\n            \"helpfulness\": \"8/14\",\n            \"score\": 1,\n            \"review_time\": \"10/09/2002\",\n            \"summary\": \"They didn't  read the novel before they wrote this BOMB!!!\",\n            \"review_text\": \"Probably the worst re-telling of a great novel I have ever seen. Only scant resemblence to the Dumas book appears in this movie. the screenplay is contrived and the action uneven at best. It's too bad because the actors do a nice job with their roles. This may be an unfair criticism because I couldn't bear to watch this thing to the end.<p>The version with Gerard Depardieu is no more satisfying or faithful to the original source.<p>For the new generation of moviegoers, try to see the made for TV movie with Richard Chamberlain as Dantes. You'll enjoy Alexandre Dumas much more than Alexandre Dumb...\"\n        },\n        {\n            \"product_id\": \"B000063W1R\",\n            \"categories\": [\n                \"['Movies & TV', 'Genre for Featured Categories', 'Action & Adventure']\"\n            ],\n            \"user_id\": \"AED6N2DP65192\",\n            \"profile_name\": \"Elena\",\n            \"helpfulness\": \"10/17\",\n            \"score\": 1,\n            \"review_time\": \"16/04/2004\",\n            \"summary\": \"The Count of Monte Cristo\",\n            \"review_text\": \"While this maybe an entertainig movie for the ones who have not read the book, it is an abomination for those of us who cherish one of the world's greatest classics.  It is like Romeo and Juliette getting married and live happily ever after.  There are indeed beautiful scenes, good acting and an appealing story the movie is not really reflecting the book.  I was thoroughly disgusted walking out of the theater. I would very highly recommend the 1974 version with Richard Chaimberlain as a much better film\"\n        },\n        {\n            \"product_id\": \"B000063W1R\",\n            \"categories\": [\n                \"['Movies & TV', 'Genre for Featured Categories', 'Action & Adventure']\"\n            ],\n            \"user_id\": \"AYDMO7GMLIQJ3\",\n            \"profile_name\": \"ROMANYRYE\",\n            \"helpfulness\": \"1/3\",\n            \"score\": 1,\n            \"review_time\": \"22/09/2012\",\n            \"summary\": \"wrong area\",\n            \"review_text\": \"This was only useable elsewhere. It said wrong area when I inserted it, But Im told it cant be returned if 'opened' I just took off the cellophane. Why agree to sell and post a DVD to the UK when it was impossible to watch??<br />a big con trick\"\n        },\n        {\n            \"product_id\": \"B000063W1R\",\n            \"categories\": [\n                \"['Movies & TV', 'Genre for Featured Categories', 'Action & Adventure']\"\n            ],\n            \"user_id\": \"A2YMUM79BAB0TF\",\n            \"profile_name\": \"pj\",\n            \"helpfulness\": \"1/3\",\n            \"score\": 1,\n            \"review_time\": \"03/09/2011\",\n            \"summary\": \"count of Monte cristo\",\n            \"review_text\": \"It finally arrived after waiting over a month....it was sent with no protective wrapping of any kind and was damaged...as was the case it arrived in...I was very disatisfied and not pleased...from now on I will only order strictly from amazon.\"\n        },\n        {\n            \"product_id\": \"B000063W1R\",\n            \"categories\": [\n                \"['Movies & TV', 'Genre for Featured Categories', 'Action & Adventure']\"\n            ],\n            \"user_id\": \"A103VZ3KDF2RT5\",\n            \"profile_name\": \"Elena\",\n            \"helpfulness\": \"5/9\",\n            \"score\": 1,\n            \"review_time\": \"05/05/2004\",\n            \"summary\": \"A disappointment for book fans\",\n            \"review_text\": \"If you read and loved the book, then most likely this movie isn't for you.  The only similarities between the two being Dantes imprisonment and escape.  I have yet to see a movie version of the Count of Monte Cristo that gets the story right, the closest being the 1975 Richard Chamberlain version, but even that one had it's flaws.  A summery of this movie would be Edmond Dantes' life is ruined by his greedy friend, but after tweleve years in prison, Dantes comes back, gets his vengence, and Mercedes and his life goes back to how it was twelve years ago.  The book is so much deeper, and this unrealistic fairy tale ending makes the whole movie feel flat.\"\n        },\n        {\n            \"product_id\": \"B000063W1R\",\n            \"categories\": [\n                \"['Movies & TV', 'Genre for Featured Categories', 'Action & Adventure']\"\n            ],\n            \"user_id\": \"A3FX9KYW53MRBD\",\n            \"profile_name\": \"Emily Todd\",\n            \"helpfulness\": \"35/56\",\n            \"score\": 1,\n            \"review_time\": \"28/11/2002\",\n            \"summary\": \"Should be Locked in Chateau D'If!\",\n            \"review_text\": \"Classics remain beloved for hundreds of years because they are wonderfully crafted and contain universal truths that still speak to us. The director and producer of this condescending adaptation of Dumas' classic story must feel that the modern American audience doesn't have the intelligence to appreciate great classic works.<br /><br />Oh, the basic story line is there--man is wronged, man goes to prison, man escapes, man finds treasure, man seeks revenge. But that is where the homage to this great work ends and the often ridiculous changes are made. I know that it is cliche to say that the movie is not as good as the book. In this case, however, I can't believe they actually had the audacity to call the movie by the same name as the classic novel which it so minimally follows.<br /><br />One can excuse some adaptations of a novel when produced as a screenplay, but the changes made in this case lose all the beauty and terrible power of the original story. Instead of a wonderful slow burn with a lot of atmosphere as Dantes slowly and painstakingly weaves a web of revenge for the wrongs done to him, we have stupid devices like a flamboyant entry in a hot air balloon, complete with Cirque du Soleil acrobats twisting on the ropes. Instead of an intricate plan to destroy the personages who wronged him, we have swashbuckling sword fights every few scenes.<br /><br />Some major characters are missing completely (such as Valentine) some have been shamelessly changed and substituted (Jacopo for Ali). The final plot device is totally contrived and NOT in the book--we find out that Dantes has a son sired on Mercedes before he was arrested. I guess the screenwriters felt they had to put some sex in the story or no one would like it.<br /><br />I awaited this production eagerly; having now seen it I feel disgusted and insulted.  If you want to see an intelligent production of the Count of Monte Cristo, avoid this movie like the Black Death. It would be better to lock the DVD in the Chateau D'If. If you haven't read the book, you may enjoy it, since you won't be dissapointed by what is lacking. It does have good scenery and filming, although some of the acting is terrible (Jacopo especially).<br /><br />To the director and producers: for shame. Nearly everything about this movie was wrong, wrong, wrong. Give the American audience some credit for pity's sake. We can appreciate great works just as they are.\"\n        },\n        {\n            \"product_id\": \"B003AI2VGA\",\n            \"categories\": [],\n            \"user_id\": \"AQJVNDW6YZFQS\",\n            \"profile_name\": \"Charles R. Williams\",\n            \"helpfulness\": \"3/11\",\n            \"score\": 1,\n            \"review_time\": \"22/11/2006\",\n            \"summary\": \"This is junk, stay away\",\n            \"review_text\": \"Mexican men are macho rapists, gangsters or ineffective bureaucrats. Mexican women are semi-pagan, pious fools. There are self-serving corporate types and even a pushy, culturally-insensitive liberal female reporter.<br /><br />The story is absurd, the characters are unbelievable, the stereotypes are offensive.\"\n        },\n        {\n            \"product_id\": \"B000063W1R\",\n            \"categories\": [\n                \"['Movies & TV', 'Genre for Featured Categories', 'Action & Adventure']\"\n            ],\n            \"user_id\": \"A1QQPIUXWD4G0Z\",\n            \"profile_name\": \"Octavius\",\n            \"helpfulness\": \"12/21\",\n            \"score\": 1,\n            \"review_time\": \"28/07/2004\",\n            \"summary\": \"The Count of Hollywood\",\n            \"review_text\": \"Calling this movie after Alexandre Dumas' original novel is like calling Bernstein's 'West Side Story' 'Romeo and Julliette' after Shakespeare's work. So many elements of the story were altered that Dumas' original plot and theme are no longer recognizable except for the names of some of the characters. They might as well call this film 'The Count of Hollywood' and set the story in modern L.A. instead of 19th century France.<br /><br />  In this film, Dantes is informed of the mission to rescue Napoleon from the onset as opposed to finding about it when returning to shore. Danglars is barely in the picture and is cast as a pirate instead of a banker. Mercedes marries Fernand one month after Dantes is imprisoned instead of 18 months (So much for her loyalty: why would Dantes even forgive her in the end if she were such a tramp?) Luigi Vampa is depicted as the captain who brings Dantes to the island of Monte Cristo right after his escape instead of being a murdering Italian kidnapper he meets much much later. Dante's Turkish guards are ommitted from the story: there's no Princess Haydee or Ali. There's also no Caderousse. In short, this movie has really little if anything to do with Alexandre Dumas' classic 'Le Comte de Monte Cristo. If that's the story you want to see on film, don't see this film.<br /><br />  I strongly recommend the French 1998 mini-series instead of this farce: although Gerard DePardieu's dinstinctive physique undermines his role as a master of disguise, his performance of the role is otherwise excellent. The mini-series is much more faithful to the characters, plots, and themes Dumas sought to convey in his literary masterpiece.\"\n        }\n    ],\n    \"statistics\": {\n        \"amount_user\": 2722,\n        \"max_score\": 5,\n        \"min_score\": 1,\n        \"avg_score\": 4.293555240793201\n    }\n}"
+				}
+			]
+		},
+		{
+			"name": "linea tiempo",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{url}}/movies/timeline?size=10&page=1&sort=product_id&order=asc&start_date=18/04/2002&end_date=30/04/2002&product_id=0790747324&search_user=r",
+					"host": [
+						"{{url}}"
+					],
+					"path": [
+						"movies",
+						"timeline"
+					],
+					"query": [
+						{
+							"key": "size",
+							"value": "10"
+						},
+						{
+							"key": "page",
+							"value": "1"
+						},
+						{
+							"key": "sort",
+							"value": "product_id"
+						},
+						{
+							"key": "order",
+							"value": "asc"
+						},
+						{
+							"key": "start_date",
+							"value": "18/04/2002"
+						},
+						{
+							"key": "end_date",
+							"value": "30/04/2002"
+						},
+						{
+							"key": "product_id",
+							"value": "0790747324"
+						},
+						{
+							"key": "search_user",
+							"value": "r"
+						}
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "linea tiempo",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{url}}/movies/timeline?size=10&page=1&sort=product_id&order=asc&start_date=18/04/2002&end_date=30/04/2002&product_id=0790747324&search_user=r",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"movies",
+								"timeline"
+							],
+							"query": [
+								{
+									"key": "size",
+									"value": "10"
+								},
+								{
+									"key": "page",
+									"value": "1"
+								},
+								{
+									"key": "sort",
+									"value": "product_id"
+								},
+								{
+									"key": "order",
+									"value": "asc"
+								},
+								{
+									"key": "start_date",
+									"value": "18/04/2002"
+								},
+								{
+									"key": "end_date",
+									"value": "30/04/2002"
+								},
+								{
+									"key": "product_id",
+									"value": "0790747324"
+								},
+								{
+									"key": "search_user",
+									"value": "r"
+								}
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Date",
+							"value": "Sun, 10 Dec 2023 22:12:32 GMT"
+						},
+						{
+							"key": "Server",
+							"value": "WSGIServer/0.2 CPython/3.11.4"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "X-Frame-Options",
+							"value": "DENY"
+						},
+						{
+							"key": "Content-Length",
+							"value": "258"
+						},
+						{
+							"key": "X-Content-Type-Options",
+							"value": "nosniff"
+						},
+						{
+							"key": "Referrer-Policy",
+							"value": "same-origin"
+						},
+						{
+							"key": "Cross-Origin-Opener-Policy",
+							"value": "same-origin"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"current_page\": 1,\n    \"data\": [\n        {\n            \"review_time\": \"18/04/2002\",\n            \"avg_score\": 4,\n            \"avg_helpfulness\": 0.8333333333333334,\n            \"avg_helpfulness_format\": \"10/12\"\n        },\n        {\n            \"review_time\": \"29/04/2002\",\n            \"avg_score\": 5,\n            \"avg_helpfulness\": 0.6,\n            \"avg_helpfulness_format\": \"3/5\"\n        }\n    ]\n}"
+				}
+			]
+		}
+	],
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		}
+	],
+	"variable": [
+		{
+			"key": "url",
+			"value": "http://127.0.0.1:8000/api",
+			"type": "string"
+		}
+	]
+}
