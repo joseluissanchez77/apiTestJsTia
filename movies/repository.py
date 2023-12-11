@@ -13,7 +13,15 @@ class MoviesRepository:
             query = f"""SELECT 
                 TO_CHAR(review_time, 'DD/MM/YYYY') as review_time,
                 AVG(score) AS avg_score,
-                AVG(CAST(SPLIT_PART(helpfulness, '/', 1) AS FLOAT) / CAST(SPLIT_PART(helpfulness, '/', 2) AS FLOAT)) AS avg_helpfulness,
+                --AVG(CAST(SPLIT_PART(helpfulness, '/', 1) AS FLOAT) / CAST(SPLIT_PART(helpfulness, '/', 2) AS FLOAT)) AS avg_helpfulness,
+                AVG(
+                    CASE
+                    WHEN SPLIT_PART(helpfulness, '/', 2)::FLOAT != 0 THEN
+                        CAST(SPLIT_PART(helpfulness, '/', 1) AS FLOAT) / CAST(SPLIT_PART(helpfulness, '/', 2) AS FLOAT)
+                    ELSE
+                        0  -- Devuelve cero en caso de división por cero
+                    END
+                ) AS avg_helpfulness,
                 CONCAT(AVG(CAST(SPLIT_PART(helpfulness, '/', 1) AS FLOAT)), '/', AVG(CAST(SPLIT_PART(helpfulness, '/', 2) AS FLOAT))) AS avg_helpfulness_format
                 FROM 
                     {MoviesRepository.TABLE_NAME}
